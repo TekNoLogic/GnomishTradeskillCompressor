@@ -1,10 +1,10 @@
 ## Interface: 70100
 
-## Title: GnomishTradeskillCollapser
-## Notes: Keep those old tradeskill categories collapsed
+## Title: GnomishTradeskillCompressor
+## Notes: Make those tradeskill categories stay collapsed
 ## Author: Tekkub Stoutwrithe
 
-## SavedVariablesPerCharacter: GnomishTradeskillCollapserDBPC
+## SavedVariablesPerCharacter: GnomishTradeskillCompressorDBPC
 
 ## LoadOnDemand: 1
 ## LoadWith: Blizzard_TradeSkillUI

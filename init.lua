@@ -2,4 +2,4 @@
 local myname, ns = ...
 
 
-ns.dbpcname = "GnomishTradeskillCollapserDBPC"
+ns.dbpcname = "GnomishTradeskillCompressorDBPC"
