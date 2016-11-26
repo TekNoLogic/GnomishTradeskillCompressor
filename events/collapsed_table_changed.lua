@@ -6,16 +6,14 @@ local DELAY = 0.01
 
 
 local last_table
-local function Check()
-  if TradeSkillFrame.RecipeList.pendingRefresh then
-    C_Timer.After(DELAY, Check)
-    return
-  end
+local function TableChanged()
+  if TradeSkillFrame.RecipeList.pendingRefresh then return false end
+  return last_table ~= TradeSkillFrame.RecipeList.collapsedCategories
+end
 
-  if last_table == TradeSkillFrame.RecipeList.collapsedCategories then
-    C_Timer.After(DELAY, Check)
-    return
-  end
+
+local function Check()
+  if not TableChanged() then return C_Timer.After(DELAY, Check) end
 
   last_table = TradeSkillFrame.RecipeList.collapsedCategories
   ns.SendMessage("_TABLE_CHANGED")
