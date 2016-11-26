@@ -1,0 +1,19 @@
+## Interface: 70100
+
+## Title: GnomishTradeskillCollapser
+## Notes: Keep those old tradeskill categories collapsed
+## Author: Tekkub Stoutwrithe
+
+## SavedVariablesPerCharacter: GnomishTradeskillCollapserDBPC
+
+## LoadOnDemand: 1
+## LoadWith: Blizzard_TradeSkillUI
+
+externals\events.lua
+
+events\collapsed_table_changed.lua
+
+services\apply_settings.lua
+services\save_settings.lua
+
+init.lua
